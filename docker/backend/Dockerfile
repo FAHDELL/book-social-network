@@ -23,6 +23,10 @@ COPY --from=build /build/target/book-network-*.jar /app/app.jar
 EXPOSE 8088
 
 ENV DB_URL=jdbc:postgresql://postgres-sql-bsn:5432/book_social_network
+ENV EMAIL_HOSTNAME=missing_host_name
+ENV EMAIL_USERNAME=missing_user_name
+ENV EMAIL_PASSWORD=missing_password
+
 
 CMD java -jar \
 -Dspring.profiles.active=${ACTIVE_PROFILE} \

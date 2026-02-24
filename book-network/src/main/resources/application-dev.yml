@@ -33,10 +33,10 @@ spring:
 #        writetimeout: 5000
 
   mail:
-    host: smtp.gmail.com
+    host: ${EMAIL_HOSTNAME} #smtp.gmail.com
     port: 587
-    username: fahdzizou@gmail.com
-    password: wfmnxgkkkqqprsza   # ton App Password, sans espaces
+    username: ${EMAIL_USERNAME} #fahdzizou@gmail.com
+    password: ${EMAIL_PASSWORD} #wfmnxgkkkqqprsza   # ton App Password, sans espaces
     properties:
       mail:
         smtp:
@@ -57,6 +57,9 @@ application:
   mailing:
     frontend:
       activation-url: http://localhost:4200/activate-account
+
+  cors:
+    origins: http://localhost:4200,http://localhost:8080
 
   file:
     upload:
