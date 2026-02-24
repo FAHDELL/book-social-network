@@ -26,7 +26,10 @@ jobs:
           java-version: '21'
           distribution: 'corretto'
 
-      - name: Running Unit Tests
+      - name: Make Maven Wrapper executable
+        run: cd book-network && chmod +x mvnw
+
+      - name: Running Compiler
         run: |
           cd book-network
           ./mvnw clean compile
@@ -44,6 +47,9 @@ jobs:
         with:
           java-version: '21'
           distribution: 'corretto'
+
+      - name: Make Maven Wrapper executable
+        run: cd book-network && chmod +x mvnw
 
       - name: Running Unit Tests
         run: |
@@ -64,6 +70,9 @@ jobs:
         with:
           java-version: '21'
           distribution: 'corretto'
+
+      - name: Make Maven Wrapper executable
+        run: cd book-network && chmod +x mvnw
 
       - name: Compile project
         run: |
