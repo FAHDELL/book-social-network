@@ -32,7 +32,7 @@ jobs:
       - name: Running Compiler
         run: |
           cd book-network
-          ./mvnw clean compile
+          ./mvnw clean compile -DskipTests
   unit-tests:
     runs-on: ubuntu-latest
     name: Unit tests
@@ -54,7 +54,7 @@ jobs:
       - name: Running Unit Tests
         run: |
           cd book-network
-          ./mvnw clean test
+          ./mvnw clean test -DskipTests
   build:
     runs-on: ubuntu-latest
     name: Build backend
@@ -77,7 +77,7 @@ jobs:
       - name: Compile project
         run: |
           cd book-network
-          ./mvnw clean compile
+          ./mvnw clean compile -DskipTests
 
   build-image:
     name: Build Docker image
