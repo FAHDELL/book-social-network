@@ -98,4 +98,8 @@ To get started with the Book Social Network project, follow the setup instructio
 
 ## Acknowledgments
 
+<<<<<<< HEAD
 Special thanks to the developers and maintainers of the technologies used in this project. Their hard work and dedication make projects like this possible.
+=======
+Special thanks to the developers and maintainers of the technologies used in this project. Their hard work and dedication make projects like this possible.
+>>>>>>> 0946493514ba53298daf7a8f3373a946ff4dab27
